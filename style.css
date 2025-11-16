@@ -1,0 +1,159 @@
+/* === CSS Reset & Variables === */
+:root {
+    --color-background: #fcfdff; /* Very Light Blue */
+    --color-surface: #ffffff;
+    --color-text-primary: #3a304e; /* Dark Purple */
+    --color-text-secondary: #6a5b82; /* Medium Purple */
+    --color-accent-purple: #e6d6ff;
+    --color-accent-green: #d4f9e3;
+    --color-accent-pink: #ffe1f0;
+    --color-accent-blue: #c8d8ff;
+    --color-dark-bg: #3a304e; /* Dark Purple */
+    --color-border: #f0f0f0;
+    --font-primary: 'Inter', Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+/* === Header & Navigation === */
+header {
+    background: var(--color-dark-bg);
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+nav {
+    background: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+    /* Sticky nav bar - uncomment the 3 lines below if you want it! */
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 10; */
+}
+
+nav a {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--color-accent-green);
+    color: var(--color-text-primary);
+}
+
+nav a.active {
+    background-color: var(--color-accent-purple);
+    color: var(--color-text-primary);
+}
+
+/* === Main Content === */
+main {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    padding: 2rem 2.5rem;
+    background: var(--color-surface);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    border-bottom: 2px solid var(--color-accent-pink);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--color-accent-blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* This targets links in the contact and education pages, but not nav */
+main a {
+    color: var(--color-accent-blue);
+}
+
+strong {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background: var(--color-dark-bg);
+    color: #e0e0e0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* === Utility Classes for Specific Pages === */
+.education-entry {
+    margin-bottom: 1.5rem;
+}
+
+.education-entry strong {
+    font-size: 1.2rem;
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.education-entry p {
+    margin: 0.25rem 0 0 0;
+    color: var(--color-text-secondary);
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
