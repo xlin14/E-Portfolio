@@ -2,13 +2,13 @@
 :root {
     --color-background: #fcfdff; /* Very Light Blue */
     --color-surface: #ffffff;
-    --color-text-primary: #3a304e; /* Dark Purple */
-    --color-text-secondary: #6a5b82; /* Medium Purple */
+    --color-text-primary: #000000; /* Black */
+    --color-text-secondary: #666666; /* Dark Gray */
     --color-accent-purple: #e6d6ff;
     --color-accent-green: #d4f9e3;
     --color-accent-pink: #ffe1f0;
     --color-accent-blue: #c8d8ff;
-    --color-dark-bg: #3a304e; /* Dark Purple */
+    --color-dark-bg: #6B705C; /* Less Saturated Olive */
     --color-border: #f0f0f0;
     --font-primary: 'Inter', Arial, sans-serif;
 }
@@ -34,13 +34,14 @@ header h1 {
     margin: 0 0 0.5rem 0;
     font-size: 2.75rem;
     font-weight: 700;
+    color: #FFFDD0; /* Cream */
 }
 
 header p {
     margin: 0;
     font-size: 1.15rem;
     font-weight: 300;
-    color: #e0e0e0;
+    color: #C9A0DC; /* Wisteria (lilac) */
 }
 
 nav {
@@ -91,7 +92,7 @@ section {
 h2 {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--color-text-primary);
+    color: #C9A0DC; /* Wisteria */
     border-bottom: 2px solid var(--color-accent-pink);
     padding-bottom: 0.75rem;
     margin-bottom: 1.5rem;
