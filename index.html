@@ -4,67 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Xin Lin</title>
+    <!-- Basic styling to make it look clean -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        nav a:hover, nav a.active {
+            background: #555;
+            border-radius: 5px;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>My Homepage</h1>
-        
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Xin Lin</h1>
+        <p style="color: #ccc;">Graphic Design Student</p>
     </header>
+
+    <!-- This is the updated navigation bar -->
+    <!-- It now links to your .html files -->
+    <nav>
+        <!-- 'class="active"' highlights the current page -->
+        <a href="index.html" class="active">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <main>
         
+        <!-- SECTION 1: ABOUT ME -->
         <section id="about">
-            <h2>About Me</h2>
+            <h2>Hello!</h2>
             <p>
-                Hello! I'm a Chinese American student and a senior at <strong>Tennessee Technological University</strong>,
+                I'm a **Chinese American** student and a senior at <strong>Tennessee Technological University</strong>,
                 majoring in <strong>Graphic Design</strong>.
             </p>
             <p>
                 When I'm not in class, I love bringing creative ideas to life through crafts, getting lost in a 
-                good book, or thrifting for unique finds in my downtown.
-            </p>
-        </section>
-
-        <hr> <section id="education">
-            <h2>Education</h2>
-            <p>
-                <strong>Tennessee Technological University</strong><br>
-                <em>Bachelor of Science in Graphic Design</em><br>
-                Expected Graduation: May 2026
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>
-                Put your relevant internships, jobs, or class projects here.
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                You can reach me at [Your Email Here] or find me on LinkedIn.
+                good book, or thrifting for unique finds in my downtown. I love exploring new design
+                techniques and finding ways to blend traditional art with modern digital tools.
             </p>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2025 [Your Name Here]</p>
+        <!-- I've added your name to the footer -->
+        <p>&copy; 2025 Xin Lin</p>
     </footer>
 
 </body>

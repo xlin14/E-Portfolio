@@ -1,30 +1,126 @@
-<!-- 
-  This is the HTML snippet for your Education section.
-  You can copy and paste this to replace the old education
-  section in your main index.html file.
--->
-<section id="education">
-    <h2>Education</h2>
-    
-    <!-- University Experience -->
-    <div>
-        <strong>Tennessee Technological University</strong>
-        <p>
-            Current Senior<br>
-            Major: Graphic Design<br>
-            <!-- You can add your expected graduation date here -->
-            <em>Expected Graduation: May 2026</em>
-        </p>
-    </div>
-    
-    <!-- High School Experience -->
-    <div>
-        <strong>McMinn Central High School</strong>
-        <p>
-            Attended for 4 years
-            <!-- You can add your graduation year here if you like -->
-            <!-- e.g., Graduated: May 2022 -->
-        </p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Xin Lin</title>
+    <!-- This is the same style block as index.html -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        nav a:hover, nav a.active {
+            background: #555;
+            border-radius: 5px;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #333;
+            color: #fff;
+        }
+        /* Style for education entries */
+        .education-entry {
+            margin-bottom: 1.5rem;
+        }
+        .education-entry strong {
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Xin Lin</h1>
+        <p style="color: #ccc;">Graphic Design Student</p>
+    </header>
+
+    <!-- This navigation bar is identical to the one on index.html -->
+    <!-- This is how you navigate between pages -->
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        
+        <!-- This is the education content -->
+        <section id="education">
+            <h2>Education</h2>
+    
+            <!-- University Experience -->
+            <div class="education-entry">
+                <strong>Tennessee Technological University</strong>
+                <p>
+                    Current Senior<br>
+                    Major: Graphic Design<br>
+                    <em>Expected Graduation: May 2026</em>
+                </p>
+            </div>
+            
+            <!-- High School Experience -->
+            <div class="education-entry">
+                <strong>McMinn Central High School</strong>
+                <p>
+                    Attended for 4 years<br>
+                    <em>Graduated: May 2022</em> <!-- You can change this if needed -->
+                </p>
+            </div>
+        
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Xin Lin</p>
+    </footer>
+
+</body>
+</html>
