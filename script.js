@@ -1,20 +1,7 @@
 // Wait for the HTML document to finish loading
 document.addEventListener("DOMContentLoaded", function() {
     
-    // --- This is the new code for your menu button ---
-    const menuButton = document.querySelector('.menu-button');
-    const navMenu = document.querySelector('nav');
-
-    if (menuButton && navMenu) {
-        menuButton.addEventListener('click', () => {
-            // Toggle the 'nav-open' class on the <nav> element
-            navMenu.classList.toggle('nav-open');
-            
-            // Toggle the 'active' class on the button (for the "X" animation)
-            menuButton.classList.toggle('active');
-        });
-    }
-    // --- End of new menu button code ---
+    
 
 
     
