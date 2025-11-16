@@ -1,11 +1,7 @@
 // Wait for the HTML document to finish loading
 document.addEventListener("DOMContentLoaded", function() {
     
-    
 
-
-    
-    // --- This is your existing code for the active page link ---
     
     // Get the current page's file name (e.g., "index.html")
     let currentPage = window.location.pathname.split('/').pop();
